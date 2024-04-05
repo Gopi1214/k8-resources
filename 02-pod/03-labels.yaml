@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-demo
+  labels:
+    environment: dev
+    app: roboshopDev
+spec:
+  # list of containers
+  containers:
+  - name: gopi-pod
+    image: nginx
+    ports:
+     - containerPort: 80
