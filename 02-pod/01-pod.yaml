@@ -6,7 +6,7 @@ metadata:
 spec:
   # list of containers
   containers:
-  - name: gopi-pod-0
+  - name: gopi-pod
     image: nginx
     ports:
      - containerPort: 80
