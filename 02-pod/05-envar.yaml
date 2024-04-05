@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: envar-demo-container
-    images: nginx
+    image: nginx
     ports:
     - containerPort: 80
     env:
