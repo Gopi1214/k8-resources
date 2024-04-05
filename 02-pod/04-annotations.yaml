@@ -1,11 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: label-demo
-  labels:
-    environment: dev
-    app: roboshopDev
-  
+  name: annotations-demo
+  annotations:
+    imageReistry: "https://hub.docker.com/"
+    app: "roboshop Dev"
 spec:
   # list of containers
   containers:
