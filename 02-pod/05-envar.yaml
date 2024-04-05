@@ -11,5 +11,5 @@ spec:
     ports:
     - containerPort:80
     env:
-      name: hello-amma
+    - name: hello-amma
       value: "always be happy amma" 
