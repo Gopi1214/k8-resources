@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: pod
+metadata: 
+  name: envar-demo
+  labels:
+    purpose: practicing-envar
+spec:
+  containers:
+  - name: envar-demo-container
+    images: nginx
+    ports:
+    - containerPort:80
+    env:
+    - name: hello-amma
+      value: "always be happy amma" 
