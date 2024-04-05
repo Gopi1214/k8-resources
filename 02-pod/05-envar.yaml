@@ -9,7 +9,7 @@ spec:
   - name: envar-demo-container
     images: nginx
     ports:
-    - containerPort:80
+    - containerPort: 80
     env:
     - name: hello-amma
       value: "always be happy amma" 
