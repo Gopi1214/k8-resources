@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: resources
+  name: resources-pod
 spec:
   containers:
-  - name: pod-resources
-    images: nginx
+  - name: resource-container
+    image: nginx
     ports:
     - containerPort: 80
     resources:
