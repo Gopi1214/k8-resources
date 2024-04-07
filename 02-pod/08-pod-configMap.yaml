@@ -5,8 +5,10 @@ metadata:
 spec:
   containers:
   - name: demo
-    images: alpine
+    image: alpine
     command: ["sleep","300"]
+    ports:
+    - containerPort: 80
     env:
     - name: technology
       valueFrom:
