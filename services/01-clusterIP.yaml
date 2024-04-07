@@ -7,11 +7,10 @@ metadata:
      demo: clusteIp
 spec:
   containers:
-    name: cluster-pod
+  - name: cluster-pod
     image: nginx
     ports:
     - containerPort: 80
-
 ---
 
 apiVersion: v1
