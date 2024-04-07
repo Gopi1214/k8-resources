@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: nginx-lb
+    labels:
+      name: sumi
+      car: mami
+spec:
+    containers:
+    - name: nginx-lb
+      image: nginx
+      ports:
+      - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+   name: nginx-lb
+spec:
+  type: LoadBalancer
+  selector:
+    name: sumi
+    car: mami
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+   
