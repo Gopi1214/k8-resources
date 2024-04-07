@@ -20,7 +20,7 @@ spec:
   type: NodePort
   selector:
     name: demo
-    demo: external
+    test: external
   ports:
   - protocol: TCP
     port: 80 #service-port
