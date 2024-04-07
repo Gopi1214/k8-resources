@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap-pod-demo
+spec:
+  containers:
+  - name: demo
+    images: alpine
+    command: ["sleep","300"]
+    env:
+    - name: technology
+      valueFrom:
+        configMapKeyRef:
+          name: config-demo
+          key: technology
+    - name: learner
+      valueFrom:
+        configMapKeyRef:
+          name: config-demo
+          key: learner

@@ -12,4 +12,7 @@ spec:
     - containerPort: 80
     env:
     - name: hello-amma
-      value: "always be happy amma" 
+      value: "always be happy amma"
+    - name: amma do i deserve to be your son?
+      value: I don't know the answer amma, but you are my true mother amma.
+  
