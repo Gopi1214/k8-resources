@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx-deployment
-        images: nginx
+        image: nginx
         ports:
         - containerPorts: 80
 
