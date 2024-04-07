@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: demo
-    image: alpine
+    image: nginx
     command: ["sleep","300"]
     ports:
     - containerPort: 80
