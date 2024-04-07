@@ -1,14 +1,16 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nodeport-pod
+  name: nginx-nodeport
   labels:
-    name: demo
-    test: external
+    app: nginx-nodeport
+    demo: service
 spec:
+  # list of containers
   containers:
-  - name: nodeport-pod
+  - name: nginx-nodeport
     image: nginx
+    #here with this line port will not be opened, just for information
     ports:
     - containerPort: 80
 ---
@@ -19,8 +21,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-    name: demo
-    demo: external
+    app: nginx-nodeport
+    demo: service
   ports:
   - protocol: TCP
     port: 80 #service-port
