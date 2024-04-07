@@ -1,0 +1,29 @@
+apiVersion: v1
+Kind: Pod
+metadata:
+  name: cluster-pod
+  labels:
+     name: gopi
+     demo: clusteIp
+spec:
+  containers:
+    name: cluster-pod
+    image: nginx
+    ports:
+    - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    name: gopi
+    demo: clusteIp
+  ports:
+  - protocol: TCP
+    port: 80 #service-port
+    targetPort: 80 #container-port
+    
