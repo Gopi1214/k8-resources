@@ -40,7 +40,7 @@ spec:
       volumes:
       - name: nginx-data
         persistentVolumeClaim:
-        claimName: efs-dynamic
+          claimName: efs-dynamic
 ---
 apiVersion: v1
 kind: Service
