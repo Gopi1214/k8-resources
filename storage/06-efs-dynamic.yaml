@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: nginx-deployment
-        image: nginx:stable-alpine3.17-slim
+        image: nginx
         ports:
         - containerPort: 80
         volumeMounts:
